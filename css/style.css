@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'OpenSans Bold';
+  src: url("../OpenSans-Bold.eot");
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../OpenSans-Bold.woff") format("woff"), url("../OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'OpenSans Light';
+  src: url("../fonts/OpenSans-Light.eot");
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../OpenSans-Light.woff") format("woff"), url("../OpenSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'OpenSans Regular';
+  src: url("../OpenSans-Regular.eot");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../OpenSans-Regular.woff") format("woff"), url("../OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'OpenSans SemiBold';
+  src: url("../OpenSans-SemiBold.eot");
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url("../OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../OpenSans-SemiBold.woff") format("woff"), url("../OpenSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "FontAwesome Regular";
+  src: url("../fonts/fontawesome5freeregular.eot");
+  src: url("../fonts/fontawesome5freeregular.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome5freeregular.woff2") format("woff2"), url("../fonts/fontawesome5freeregular.woff") format("woff"), url("../fonts/fontawesome5freeregular.ttf") format("truetype"), url("../fonts/fontawesome5freeregular.svg#fontawesome5freeregular") format("svg");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: inherit;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
