@@ -1,3 +1,281 @@
-@import "_fonts.scss";
 @import "_null.scss";
+@import "_button.scss";
+@import "_fonts.scss";
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+}
+body {
+  min-width: 350px;
+}
 @import "_header.scss";
+
+.main {
+}
+.features {
+  background-color: #2e3b4e;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    min-height: 510px;
+    height: auto;
+    position: relative;
+    .line {
+      position: absolute;
+      background-color: #2e3b4e;
+      height: 100px;
+      width: 120px;
+      left: 44%;
+      bottom: -35px;
+      border-radius: 50%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 65px;
+    column-gap: 38px;
+  }
+
+  &__item {
+  }
+}
+.item {
+  &__title {
+    font-size: 15px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.733;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    width: 400px;
+    font-size: 15px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    line-height: 1.733;
+  }
+}
+.pink {
+  background: url(../img/bc2.png);
+  &__body {
+    min-height: 539px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    text-align: center;
+  }
+}
+
+.content-pink {
+  &__title {
+    font-size: 35px;
+    font-family: "OpenSans Light";
+    color: rgb(255, 255, 255);
+    line-height: 1.716;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-family: "OpenSans Regular";
+    color: rgb(255, 255, 255);
+    line-height: 1.733;
+    width: 480px;
+    margin-bottom: 35px;
+  }
+
+  &__button {
+    height: 60px;
+    width: 340px;
+    @extend %btn2;
+  }
+}
+
+.about {
+  &__body {
+    display: flex;
+    align-items: center;
+    min-height: 496px;
+    height: auto;
+  }
+
+  &__img {
+  }
+
+  &__content {
+  }
+}
+.content-about {
+  &__title {
+    font-size: 15px;
+    font-family: "OpenSans Bold";
+    color: rgb(58, 77, 96);
+    text-transform: uppercase;
+    line-height: 1.733;
+    text-align: left;
+    width: 655px;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-family: "OpenSans";
+    color: rgb(58, 77, 96);
+    font-weight: bold;
+    line-height: 1.733;
+    text-align: left;
+    width: 648px;
+    margin-bottom: 40px;
+  }
+}
+.experience {
+  background: url(../img/bc4.png);
+  background-size: cover;
+  background-position: center;
+  height: 680px;
+  display: grid;
+  align-items: end;
+
+  &__body {
+    background-color: #4b1e5bd4;
+    height: 457px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    text-align: center;
+  }
+}
+.content-experience {
+  &__title {
+    font-size: 40px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin-bottom: 38px;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-family: "OpenSans";
+    color: rgb(168, 123, 183);
+    line-height: 1.65;
+    width: 820px;
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    height: 60px;
+    width: 280px;
+    @extend %btn;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    line-height: 1.417;
+  }
+}
+.blaz-robar {
+  background: url(../img/bc5.png);
+  background-size: cover;
+  background-position: center;
+
+  &__body {
+    min-height: 670px;
+    display: flex;
+    align-items: end;
+  }
+
+  &__content {
+  }
+}
+.content {
+  &__button {
+    height: 35px;
+    width: 135px;
+    margin-bottom: 25px;
+    @extend %btn3;
+  }
+
+  &__text {
+    font-size: 40px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    line-height: 1.25;
+    text-align: left;
+    width: 510px;
+    margin-bottom: 25px;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 105px;
+  }
+}
+.user-content {
+  &__logo {
+  }
+
+  &__text {
+    font-size: 13px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    line-height: 3.077;
+    text-align: left;
+    width: 208px;
+  }
+}
+.get-in-touch {
+  background-color: #e7526b;
+  height: 460px;
+  &__content {
+    padding-top: 79px;
+  }
+}
+.content-get-in-touch {
+  &__title {
+    font-size: 15px;
+    font-family: "OpenSans Bold";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.733;
+    margin-bottom: 23px;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-family: "OpenSans Bold";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.733;
+    width: 390px;
+    margin-bottom: 36px;
+  }
+
+  &__email {
+    a {
+      font-size: 15px;
+      font-family: "OpenSans Bold";
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      line-height: 1.733;
+    }
+  }
+}

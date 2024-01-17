@@ -1,0 +1,129 @@
+.header {
+    background: url(../img/bc1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__body {
+    }
+
+    &__top {
+        height: 102px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #412f3c;
+    }
+
+    &__bottom {
+    }
+}
+.top-header {
+    &__logo {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        img:first-child {
+            height: 21px;
+            width: 40px;
+        }
+        img:last-child {
+            height: 13px;
+            width: 133px;
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        right: 14%;
+        display: flex;
+        align-items: center;
+        column-gap: 29px;
+    }
+}
+.menu {
+    &__body {
+    }
+
+    &__list {
+        display: flex;
+        column-gap: 50px;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        position: relative;
+        color: #ffffff;
+        cursor: pointer;
+        line-height: 6;
+        text-decoration: none;
+        font-family: "OpenSans Regular";
+        font-style: normal;
+    }
+    &__link::after {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background-color: #ffffff;
+        content: "";
+        transition: width 0.3s ease-out;
+    }
+    &__link:hover:after,
+    &__link:focus:after {
+        width: 100%;
+    }
+
+    &__search {
+        height: 44px;
+        width: 220px;
+        background-color: white;
+        border-radius: 26px;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            // font-family: "FontAwesome Regular";
+            padding: 3px 0px 0px 0px;
+        }
+    }
+}
+.bottom-header {
+    &__body {
+        height: 788px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    &__content {
+        text-align: right;
+        margin-left: 15px;
+    }
+
+    &__title {
+        font-size: 50px;
+        font-family: "OpenSans Regular";
+        color: rgb(255, 255, 255);
+        margin-bottom: 50px;
+        line-height: 1.4;
+    }
+
+    &__button {
+        height: 60px;
+        width: 280px;
+        margin-bottom: 18px;
+        @extend %btn;
+    }
+
+    &__subtitle {
+        margin-right: 50px;
+        font-size: 12px;
+        font-family: "OpenSans Regular";
+        color: rgb(255, 255, 255);
+        line-height: 1.417;
+    }
+}
+@import "_footer";
