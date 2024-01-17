@@ -488,8 +488,9 @@ body {
   background-size: cover;
   background-position: center;
   height: 680px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
@@ -498,6 +499,7 @@ body {
 .experience__body {
   background-color: #4b1e5bd4;
   height: 457px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
