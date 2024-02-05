@@ -22,11 +22,12 @@ body {
     height: auto;
     position: relative;
     .line {
+      transform: translate(-50%,0px);
       position: absolute;
       background-color: #2e3b4e;
       height: 100px;
       width: 120px;
-      left: 44%;
+      left: 50%;
       bottom: -35px;
       border-radius: 50%;
     }
@@ -106,14 +107,29 @@ body {
   &__body {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     min-height: 496px;
     height: auto;
   }
 
-  &__img {
+  &__img:nth-child(1){
+    padding: 0px 20px 0px 0px;
+  }
+  &__img:nth-child(2) {
+    padding: 0px 0px 0px 20px;
   }
 
-  &__content {
+  &__content:nth-child(1){
+    padding-left:100px;
+    @media (max-width:1500px) {
+      padding-right:0px;
+    }
+  }
+  &__content:nth-child(2){
+    padding-right: 100px;
+    @media (max-width:1500px) {
+      padding-right:0px;
+    }
   }
 }
 .content-about {
@@ -125,6 +141,9 @@ body {
     line-height: 1.733;
     text-align: left;
     width: 655px;
+    @media (max-width:1305px) {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -136,6 +155,9 @@ body {
     text-align: left;
     width: 648px;
     margin-bottom: 40px;
+    @media (max-width:1305px){
+      text-align: center;
+    }
   }
 }
 .experience {
