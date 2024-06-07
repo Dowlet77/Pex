@@ -2,7 +2,15 @@
     background: url(../img/bc1.png) no-repeat;
     background-size: cover;
     background-position: center;
-    &__body {
+    &__body{
+        position: relative;
+    }
+    &__body::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background-color: #412f3c;
     }
 
     &__top {
@@ -11,12 +19,6 @@
         justify-content: space-between;
         align-items: center;
     }
-    .line{
-        height: 1px;
-        width: 100%;
-        background-color: #412f3c;
-    }
-
     &__bottom {
     }
 }
